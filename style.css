@@ -1,0 +1,278 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	text-align: justify;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: rgb(251, 229, 214);
+	width: auto;
+}
+
+header {
+	position:relative;
+	width: 100%;
+	max-width: 1500px;
+	min-height: 200px;
+	background-size: cover;
+}
+
+
+
+#photo {
+	display: inline-block;
+	float: left;
+	width: 35%;
+	margin-left: 25px;
+	padding-top: 5px;
+}
+
+#nom_profession_contact{
+	display: inline-block;
+	float: right;
+	width: 50%;
+}
+
+
+.photo {
+	width: 70%;
+	height: 300px;
+	border: 5px solid rgb(255, 212, 181);
+	border-radius: 25pt;
+	margin-left: 30px;
+}
+
+
+.nom_profession {
+	width:100%;
+	margin-top: 15px;
+}
+
+.nom {
+	border-bottom: 5px solid white;
+	text-align: center;
+	color: rgb(83, 173, 183);
+	float: center;
+	padding-bottom: 5px;
+	width: 80%;
+}
+
+.profession {
+	text-align: center;
+	color: rgb(83, 173, 183);
+	padding-top: 5px;
+	width: 80%;
+	float: center;
+}
+
+#adresse {
+	display: inline-block;
+}
+
+.contact {
+	padding-top: 15px;
+}
+
+#contact {
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+
+.adresse {
+	font-size: 1em;
+	display: inline-block;
+	margin-left: 15px;
+	padding-top: 15px;
+}
+.logo_adresse {
+	position: relative;
+	width: 40px;
+	height: 60px;
+	display: inline-block;
+}
+
+#mail {
+	padding-bottom: 3px;
+	padding-top: 15px;
+}
+
+.mail {
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	margin-left: 10px;
+	text-align: center;
+}
+.logo_mail {
+	position: relative;
+	width: 50px;
+	height: 40px;
+	display: inline-block;
+}
+
+#appel {
+	padding-bottom: 3px;
+	padding-top: 15px;
+}
+
+.appel {
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.logo_appel {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+}
+
+#linkedin {
+	padding-bottom: 3px;
+	padding-top: 15px;
+}
+
+.linkedin {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	margin-left: 1em;
+}
+
+.logo_linkedin  {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+}
+
+
+.section_gauche {
+	display: inline-block;
+	float: left;
+	width: 45%;
+	border-right: 5px dashed white;
+	padding-top: 1%;
+}
+
+.section_droite {
+	display: inline-block;
+	float: right;
+	width: 52%;
+	padding-top: 1.2%;
+}
+
+.exp1 {
+	display: inline-block;
+	padding-top: 20px;
+}
+
+
+
+.mem, .form {
+float: right;
+display: block;
+width: 80%;
+}
+.dur, .periode {
+	float: left;
+	display: block;
+	float: 15%;
+	font-weight: bold;
+}
+.par {
+	font-weight: bold;
+	color: rgb(83, 173, 183);
+}
+
+.krig, .dev {
+float: right;
+display: block;
+width: 80%;
+padding-left: 4%;
+}
+.dur1 {
+	float: left;
+	display: block;
+	float: left;
+	font-weight: bold;
+}
+ 
+.formation {
+	padding-top: 3%;
+}
+
+.h1 {
+	border: 2px solid white;
+	text-align: center;
+	background-color: white;
+	width: 80%;
+	color: rgb(83, 173, 183);
+	justify-content: center;
+	font-weight: bold;
+	position: relative;
+	margin-left: 40px;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.soft {
+	border: 2px solid white;
+	text-align: center;
+	background-color: white;
+	width: 80%;
+	color: rgb(83, 173, 183);
+	justify-content: center;
+	font-weight: bold;
+	position: relative;
+	margin-left: 40px;
+	margin-bottom: 5%;
+}
+
+
+.formation {
+	margin-top: 10px;
+}
+
+.titre {
+	border: 2px solid white;
+	text-align: center;
+	background-color: white;
+	width: 80%;
+	color: rgb(83, 173, 183);
+	font-weight: bold;
+	position: relative;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.item {
+	margin-left: 10%;
+
+}
+li {
+	cursor: pointer;
+}
+.comp {
+	padding-bottom: 5%;
+}
+
+@media screen and (max-width:850px) {
+	html {
+		font-size: 50%;
+	}
+
+	header {
+		font-size: 35px;
+	}
+	.photo {
+		grid-area: auto;
+	}
+}

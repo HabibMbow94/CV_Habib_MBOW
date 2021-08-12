@@ -15,7 +15,7 @@ allLinks.forEach(item => {
 
 
 // DARK LIGHT DARKTHEME
-
+/*
 const btnToggle = document.querySelector('.btn-toggle');
 
 btnToggle.addEventListener('click', () => {
@@ -31,8 +31,8 @@ btnToggle.addEventListener('click', () => {
         body.classList.remove('light')
         btnToggle.innerHTML = 'Nuit'
     }
-})
-/*
+})*/
+/* 
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'bx-sun';
@@ -55,3 +55,9 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })*/
+
+/* Functionality for Dark Mode */
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }

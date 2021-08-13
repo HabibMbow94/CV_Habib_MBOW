@@ -406,10 +406,5 @@ img{
     column-gap: 3.5rem;
   }
 
-  .dark-mode {
-    display: none;
-  }
-  .btn-toggle {
-    display: none;
-  }
+
 }

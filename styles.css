@@ -8,29 +8,10 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.root {
-  --ecriture:#403A3A;
-  --fond: #333;
-}
-
-/*===== CLASS CSS ===== */
-.section-title{
-  position: relative;
-  font-size: 1.25rem;
-  color: #4070F4;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-
-html{
-  scroll-behavior: smooth;
-}
 body{
   margin: 0 0 0 0;
   padding: 0;
@@ -68,8 +49,10 @@ img{
 
 .section-title{
   font-size: 1.25rem;
-  color: rgb(83, 173, 183);;
+  color: rgb(83, 173, 183);
   font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: .35rem;
   text-align: center;
@@ -82,7 +65,6 @@ img{
   width: calc(100% - 3rem);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  
 }
 
 .bd-grid {
@@ -94,24 +76,25 @@ img{
 .item {
   margin-left: 10%;
   list-style-image: url("Images/fleche.png");
+  text-align: justify;
 }
 /*===== NAV =====*/
 
 .nav{
   position: fixed;
-  height: 70px;
   width: 100%;
-  z-index: 10;
+  height: 100%;
+  z-index: 20;
   background:linear-gradient(to-bottom, #333, #626262);
 }
 
 
 .logo-menu {
-  position: absolute;
-  top: 0px;
-  right: 15px;
+  position: fixed;
+  top: 10px;
+  right: 5px;
   width: 50px;
-  z-index: 25;
+  z-index: 20;
   display: none;
 }
 
@@ -122,7 +105,7 @@ img{
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   justify-content: center;
   z-index: 20;
@@ -131,6 +114,7 @@ img{
 .nav__item{
   display: flex;
   align-items: center;
+  z-index: 25;
 }
 
 
@@ -165,28 +149,27 @@ img{
   display: blocK;
 }
   .nav__list {
-    padding-top: 1px;
+    padding-top: 10px;
     height: auto;
-    position: relative;
-    background-color: white;
     display: none;
   }
   
   .nav__item {
-    height: 70px;
+    height: 10px;
     justify-content: center;
   }
 }
  
 /* Active Button */
 .btn-toggle {
-  margin-top: 10px;
+  margin-top: 1px;
  }
  .nav__list.active{
-   display: inline;
-   color: white;
-   z-index: 5;
-   right: 5px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   z-index: 25;
+   background-color: rgb(251, 229, 214);
+   justify-content: center;
  }
 
 /* DARK MODE */
@@ -203,6 +186,7 @@ img{
 }
 .dark-mode .home_img {
   border: 5px solid rgb(219, 224, 207);
+  padding-left: 15px;
 }
 /* ===== MENU ====== */
 
@@ -421,5 +405,12 @@ img{
   .interest_container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
+  }
+
+  .dark-mode {
+    display: none;
+  }
+  .btn-toggle {
+    display: none;
   }
 }

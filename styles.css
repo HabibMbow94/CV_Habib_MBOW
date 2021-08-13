@@ -33,6 +33,12 @@ ul{
   padding: 0;
   list-style: none;
 }
+.item {
+  margin-left: 10%;
+  list-style-image: url("Images/fleche.png");
+  text-align: justify;
+}
+
 a{
   text-decoration: none;
 }
@@ -73,12 +79,8 @@ img{
 }
 
 
-.item {
-  margin-left: 10%;
-  list-style-image: url("Images/fleche.png");
-  text-align: justify;
-}
-/*===== NAV =====*/
+
+/* MENU NAVIGATION */
 
 .nav{
   position: fixed;
@@ -98,8 +100,6 @@ img{
   display: none;
 }
 
-
-/* MENU NAVIGATION */
 .nav__list {
   background:linear-gradient(to-bottom, #333, #626262);
   height: 100%;
@@ -174,9 +174,12 @@ img{
 
 /* DARK MODE */
 
-.dark-mode {
+body.dark-mode {
+  margin-top: 10px;
+  margin-left: 10px;
   background-color: rgb(219, 224, 207);
 }
+
  .dark-mode .home_profession, .dark-mode .home_title {
   background-color: rgb(219, 224, 207);
 }
@@ -271,44 +274,9 @@ img{
 .education_title, .experience_title {
   font-weight: bold;
   color: rgb(83, 173, 183);
-}
-
-
-
-
-.education_title, .experience_title {
   font-size: 1rem;
 }
 
-.education_studies, .experience_company {
-  font-size: .875rem;
-  color: #0B0A0A;
-}
-
-.education_year {
-  font-size: .875rem;
-}
-/*=== SKILLS ET LANGUES ====*/
-
-.skills_content, .languages_content {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
-}
-
-.skills_name, .languages_name {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.skills_circle, .langage_circle {
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: #707070;
-  border-radius: 50%;
-  margin-right: .75rem;
-}
 
 /* ===== CERTIFICATIONS ===== */
 
@@ -316,7 +284,10 @@ img{
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-
+.social_container {
+  display: flex;
+  flex-direction: row;
+}
 /* ===== HOBBIES ===== */
 
 .interest_container {
@@ -361,18 +332,11 @@ img{
   }
   .resume {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.6fr;
     box-shadow: 0 0 8px rgba(13, 12, 12, .15);
   }
   .resume_left {
     border-right: 5px dashed white;
-  }
-  .generate-pdf {
-    display: inline-block;
-  }
-
-  .section-title, .profile_description {
-    text-align: initial;
   }
 
   .section-title {
@@ -396,15 +360,10 @@ img{
   .home_button-movil {
     display: none;
   }
-  .languages_content {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 1.5rem;
-  }
-
-  .interest_container {
-    grid-template-columns: repeat(4, max-content);
-    column-gap: 3.5rem;
-  }
-
-
+ .btn-toggle {
+  background-color: rgb(251, 229, 214);
+ }
+ .dark-mode .btn-toggle {
+   background-color: rgb(219, 224, 207);
+ }
 }

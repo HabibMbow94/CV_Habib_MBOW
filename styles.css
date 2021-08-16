@@ -18,7 +18,6 @@ body{
   font-family: 'Poppins', sans-serif;
   font-size: 0.938rem;
   background-color: rgb(251, 229, 214);
-  color: var(--ecriture);
 }
 h1,h2, h3, ul, p{
   margin: 0;
